@@ -1,0 +1,19 @@
+<!-- Создай страницу для вывода информации пользователя -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset ='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты формы</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+    {% block content %}
+    <h1>Спасибо за заполнение формы! Результаты перешлем вам на почту.</h1>
+    <p>Ваше имя: {{ name }}</p>
+    <p>Ваша почта:{{ mail }}</p>
+    <p>Ваш адресс: {{ address }}</p>
+    <p>Дата рождения: {{ date }}</p>
+    {% endblock %}
+</body>
+</html>
